@@ -461,11 +461,11 @@ header nav .form i {
     padding-top: var(--siction-padding);
     padding-bottom: var(--siction-padding);
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .protfolie {
         padding-top: 0;
     }
-}
+} */
 .protfolie .contener .shuffle {
     display: flex;
     justify-content: center;
@@ -482,15 +482,9 @@ header nav .form i {
     display: flex;
     flex-wrap: wrap;
 }
-.protfolie .imags-containr .imag-box {
+ .protfolie .imags-containr .imag-box {
     position: relative;   
     overflow: hidden;
-}
-.protfolie .imags-containr .imag-box:hover .capshen {
-    bottom: 0;
-}
-.protfolie .imags-containr .imag-box:hover img {
-    transition: 0.3s;
 }
 @media (min-width: 768px) {
     .protfolie .imags-containr .imag-box {
@@ -503,9 +497,13 @@ header nav .form i {
 }
 .protfolie .imags-containr .imag-box img {
     width: 100%;
-    height: 400px;
-    min-width: 400px;
-    min-height: 400px;
+    height: 100%;
+    min-width: 410px;
+    min-height: 410px;
+}
+
+.protfolie .imags-containr .imag-box:hover img {
+    transition: 0.3s;
 }
 .protfolie .imags-containr .imag-box .capshen {
     position: absolute;
@@ -522,7 +520,10 @@ header nav .form i {
 } 
 .protfolie .imags-containr .imag-box .capshen p {
     color: var(--main-color);
-} 
+}  
+.protfolie .imags-containr .imag-box:hover .capshen {
+    bottom: 0;
+}
 .protfolie .more {
     text-decoration: none;
     width: 100%;
@@ -582,18 +583,28 @@ header nav .form i {
     overflow: hidden;
     padding-top: var(--siction-padding);
 }
+@media (max-width: 767px) {
+    .about {
+        padding-top: 0;
+    }
+}
+.about .contener {
+    position: relative;
+    padding-bottom: 150px;
+}
 .about .image  {
-    width: 100%;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translatex(-50%);
 }
-.about .image img {
-    margin: 0 auto -60px;
-}
+
 /* end about */
 /* start stats */
 .stats {
     padding-top: var(--siction-padding);
     padding-bottom: var(--siction-padding);
-    background-image: url("/image/animal.jpg");
+    background-image: url("/image/portpholeu-8.jpeg");
     background-size: cover;
     text-align: center;
     position: relative; 
