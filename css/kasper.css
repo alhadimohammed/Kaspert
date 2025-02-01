@@ -594,11 +594,13 @@ header nav .form i {
 }
 .about .image  {
     position: absolute;
-    bottom: -25px;
+    bottom: -100px;
     left: 50%;
     transform: translatex(-50%);
 }
-
+.about .image im {
+    width: 400px;
+}
 /* end about */
 /* start stats */
 .stats {
@@ -712,8 +714,52 @@ header nav .form i {
 .our-skils .testmonails .content .text {
     margin-bottom: 20px;
     line-height: 1.8;
+    background-color: #fbfbfb;
+    color: #777;
 }
 .our-skils .testmonails .content p {
+    text-align: end;
+    font-size: 13px;
+    color: #939191;
+}
+.our-skils .skils {
 
 }
+.our-skils .skils .prog-holder {
+    margin: 40px 0;
+}
+.our-skils .skils .prog-holder h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.our-skils .skils .prog-holder .prog {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #777;
+}
+.our-skils .skils .prog-holder .prog span {
+    display: block;
+    height: 25px;
+    background-color: var(--main-color);
+    position: relative;
+}
+.our-skils .skils .prog-holder .prog span::before {
+    content: attr(data-progress);
+    color: white;
+    position: absolute;
+    right: -24px;
+    top: -48px;
+    background-color: black;
+    padding: 5px 8px;
+}
+.our-skils .skils .prog-holder .prog span::after {
+    content: "";
+    width: 0;
+    border-width: 12px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    right: -12px;
+    top: -20px;
+} 
 /* end skils */
