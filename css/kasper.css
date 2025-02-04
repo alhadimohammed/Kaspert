@@ -384,7 +384,7 @@ header nav .form i {
 .disign {
     padding-top: var(--siction-padding);
     padding-bottom: var(--siction-padding);
-    background-image: url("/image/images-2.jpeg");
+    background-image: url("../image/images.jpeg");
     background-size: cover;
     position: relative;
     height: 600px;
