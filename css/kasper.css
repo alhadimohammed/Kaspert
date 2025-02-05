@@ -1105,4 +1105,10 @@ header nav .form i {
 .footer  .contener p span {
     color: var(--main-color);
 }
+.footer  .contener .icone {
+    padding: 5px 10px;
+  }
+  .footer  .contener .icone i {
+    margin: 0 10px;
+  }
 /* end footer */
